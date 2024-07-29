@@ -1,0 +1,30 @@
+SETUP YOURSELF
+
+1: install git from https://git-scm.com/
+2: check if its installed, use 'git --version'
+3: use 'git config --global user.name "<your_username>"'
+4: use 'git config --global user.email "<your_email>"'
+
+
+
+HOW TO USE GIT
+
+1: use 'git add --all' to add all files to the repository
+2: use 'git commit -m "some_message" to commit changes to repository
+3: use 'git push' to push to github
+
+
+
+HOW TO SETUP GIT with already existing repository
+
+1:git clone https://github.com/<your_username>/your_repository.git
+2: HOW TO USE GIT
+
+
+
+HOW TO SETUP GIT locally
+
+0:go to folder of choice (cd) or create a new folder (mkdir)
+1: use 'git init'
+2: HOW TO USE GIT
+3:git remote add origin https://github.com/<your_username>/your_repository.git
