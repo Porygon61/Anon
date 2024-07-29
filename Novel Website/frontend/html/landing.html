@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="..\css\landing.css" />
+    <title>Anon | Landing</title>
+  </head>
+  <body>
+    <div class="site-content">
+      <header>
+        <div class="logo-wrapper">
+          <a href=".\home.html" title="Anon" class="logo">
+            <i class="fa-solid fa-asterisk"></i>
+          </a>
+          <h1>Anon</h1>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="*">Novel</a></li>
+            <li><a href="*">Manhwa</a></li>
+            <li><a href="*">Manga</a></li>
+            <li><a href="*">Manhua</a></li>
+          </ul>
+        </nav>
+        <div class="color-theme">
+          <button onclick="colortheme('dark');">
+            <i class="fa-solid fa-moon"></i>
+          </button>
+          <button onclick="colortheme('light');">
+            <i class="fa-solid fa-sun"></i>
+          </button>
+          <!-- CODE FOR COLOR PICKER -->
+          <!--
+          <input type="color" id="colorpicker" style="width: 20%;"/>
+          <button onclick="colortheme('picker');">
+            <i class="fa-solid fa-arrow-right"></i>
+          </button>
+          <button onclick="colortheme('reset');">
+            <i class="fa-solid fa-x"></i>
+          </button> -->
+        </div>
+        <div class="profile-wrapper">
+          <button>Login</button>
+          <button>Sign In</button>
+          <i class="fa-solid fa-circle-user"></i>
+        </div>
+      </header>
+      <main>
+        <div class="search-wrapper">
+          <form action="home.html" id="search" method="get">
+            <input type="text" name="search" placeholder="Search" />
+            <button type="submit">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+          </form>
+        </div>
+        <div class="go-to-homepage">
+          <a href=".\home.html">
+            <button>Go To The Homepage</button>
+          </a>
+        </div>
+      </main>
+      <footer>
+        <div class="social-media-wrapper">
+          <ul>
+            <li>
+              <a href="" class="socials-icon">
+                <i class="fa-brands fa-facebook"></i>
+              </a>
+            </li>
+            <li>
+              <a href="" class="socials-icon">
+                <i class="fa-brands fa-twitter"></i>
+              </a>
+            </li>
+            <li>
+              <a href="" class="socials-icon">
+                <i class="fa-brands fa-pinterest"></i>
+              </a>
+            </li>
+            <li>
+              <a href="" class="socials-icon">
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="*">Legal Disclaimer</a></li>
+            <li><a href="*">Privacy Policy</a></li>
+            <li><a href="*">Terms of Use</a></li>
+            <li><a href="*">About Us</a></li>
+          </ul>
+        </nav>
+        <p>© 2024 Anon</p>
+      </footer>
+      <script src="..\js\landing.js"></script>
+    </div>
+  </body>
+</html>

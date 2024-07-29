@@ -1,0 +1,202 @@
+
+/*
+function display_output(output, current_display, last_element) {
+  if (output === '(-)') {
+    display.value += '-';
+    global.lastOutput = '(-)';
+    global.calculation.value += '(-';
+    return;
+  }
+
+  if (output === 'square-root') {
+    display.value += 'square-root';
+    global.lastOutput = 'square-root';
+    global.calculation.value += 'Math.sqrt(';
+    return;
+  }
+
+  if (['+', '-', 'x', '÷'].includes(output)) {
+    display.value += ' ' + output + ' ';
+  } else {
+    display.value += output;
+  }
+
+  global.lastOutput = output;
+
+  if (output === 'x') {
+    global.calculation.value += '*';
+  } else if (output === '÷') {
+    global.calculation.value += '/';
+  } else if (output !== '(-)' || output !== 'square-root') {
+    global.calculation.value += output;
+  }
+
+  values(current_display, last_element);
+}
+
+function clear(option) {
+  if (option === 'display') {
+    display.value = '';
+  } else if (option === 'calculation') {
+    global.calculation.value = '';
+  } else if (option === 'negative_number') {
+    global.negativeNumber.value = '';
+  } else if (option === 'square_root') {
+    global.squareRoot.value = '';
+  } else if (option === 'all') {
+    display.value = '';
+    global.calculation.value = '';
+    global.negativeNumber.value = '';
+    global.squareRoot.value = '';
+  }
+}
+
+function calculate(input, current_display, last_element) {
+  global.lastCalculation.value = display.value;
+  clear('display');
+  console.log('input:' + input);
+  try {
+    let result = eval(input);
+    result = result.toString();
+    result = result.replace(/\B(?=(\d{3})+(?!\d))/g, ' ');
+    display.value += ' = ' + result;
+    global.calculated = true;
+    global.lastResult.value = display.value;
+    values(current_display, last_element);
+    display_results();
+  } catch (error) {
+    display.value('Error');
+  }
+}
+
+function rules(event, output) {
+  if (global.calculated) {
+    clear('all');
+    global.calculated = false;
+  }
+  let current_display = display.value.split('');
+  let last_element = current_display[current_display.length - 1];
+
+  if (output === undefined) return false;
+
+  if (output === 'clear') {
+    clear('all');
+    return false;
+  }
+
+  if (
+    current_display.length === 0 &&
+    ['+', '-', '÷', 'x', '.', ')', '='].includes(output)
+  ) {
+    return false;
+  }
+
+  if (
+    ['+', '-', '÷', 'x', '.', '(', '(-)'].includes(global.lastOutput) &&
+    ['+', '-', '÷', 'x', '.', ')', '='].includes(output)
+  ) {
+    return false;
+  }
+
+  if ([')'].includes(global.lastOutput) && [')'].includes(output)) return false;
+
+  if (['(-)'].includes(global.lastOutput) && ['(-)'].includes(output))
+    return false;
+
+  if (['square-root'].includes(global.lastOutput) && ['square-root'].includes(output)) return false;
+
+  if (!current_display.includes('(') && output === ')') return false;
+
+  if (
+    current_display.includes('(') &&
+    !current_display.includes(')') &&
+    output === '='
+  ) {
+    return false;
+  }
+
+  if (
+    !(
+      ['+', '-', '÷', 'x'].includes(global.lastOutput) ||
+      current_display.length === 0
+    ) &&
+    output === '('
+  ) {
+    return false;
+  }
+
+  if (
+    !current_display.some((char) => ['+', '-', 'x', '÷', 'square-root'].includes(char)) &&
+    output === '='
+  ) {
+    return false;
+  }
+
+  if (output === '(-)') {
+    clear('negative_number');
+    global.negativeNumberInitiation = true;
+  } else if (global.lastOutput === '(-)') {
+    global.negativeNumber.value = output;
+  }
+
+  if (output === 'square-root') {
+    clear('square_root');
+    global.squareRootInitiation = true;
+  } else if (global.lastOutput === 'square-root') {
+    global.squareRoot.value = output;
+  }
+
+  if (global.negativeNumber.value !== '') {
+    if (['+', '-', 'x', '÷', '='].includes(output)) {
+      global.calculation.value += ')';
+      clear('negative_number');
+      global.negativeNumberInitiation = false;
+    } else if (global.negativeNumberInitiation) {
+      global.negativeNumber.value += output;
+    }
+  }
+
+  if (global.squareRoot.value !== '') {
+    if (['+', '-', 'x', '÷', '='].includes(output)) {
+      global.calculation.value += ')';
+      clear('square_root');
+      global.squareRootInitiation = false;
+    } else if (global.squareRootInitiation) {
+      global.squareRoot.value += output;
+    }
+  }
+
+  if (output === '=') {
+    calculate(global.calculation.value, current_display, last_element);
+    return false;
+  }
+
+  display_output(output, current_display, last_element);
+}
+
+function display_results() {
+  const list_item = document.createElement('li');
+  list_item.setAttribute('id', 'list_item' + global.counter.value);
+  document
+    .getElementById('results')
+    .insertBefore(list_item, document.getElementById('results').firstChild);
+
+  const display_calculation = document.createElement('p');
+  const calculation_text = document.createTextNode(global.lastCalculation.value);
+  display_calculation.appendChild(calculation_text);
+  display_calculation.setAttribute('id', 'display_calculation');
+
+  const display_result = document.createElement('h5');
+  const result_text = document.createTextNode(global.lastResult.value);
+  display_result.appendChild(result_text);
+  display_result.setAttribute('id', 'display_result');
+
+  document
+    .getElementById('list_item' + global.counter.value)
+    .appendChild(display_calculation);
+  document
+    .getElementById('list_item' + global.counter.value)
+    .appendChild(display_result);
+  global.counter.value += 1;
+}
+*/

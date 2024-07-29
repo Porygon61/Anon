@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="..\css\calc.css" />
+    <title>Anon | Calculator</title>
+  </head>
+  <body>
+    <div class="site-content">
+      <div class="results">
+        <ul id="results">
+          <!-- Results will be dynamically added here -->
+        </ul>
+      </div>
+      <div class="calc">
+        <div class="display">
+          <input type="text" id="display" />
+        </div>
+        <div class="inputs">
+          <div class="button">
+            <button id="button" class="operator" value="clear">AC</button>
+          </div>
+          <div class="button">
+            <button id="button" class="operator" value="(">(</button>
+          </div>
+          <div class="button">
+            <button id="button" class="operator" value=")">)</button>
+          </div>
+          <div class="button">
+            <button id="button" class="operator" value="÷">
+              <i id="button-icon" class="fa-solid fa-divide"></i>
+            </button>
+          </div>
+          <div class="button">
+            <button id="button" value="7">
+              <i id="button-icon" class="fa-solid fa-7"></i>
+            </button>
+          </div>
+          <div class="button">
+            <button id="button" value="8">
+              <i id="button-icon" class="fa-solid fa-8"></i>
+            </button>
+          </div>
+          <div class="button">
+            <button id="button" value="9">
+              <i id="button-icon" class="fa-solid fa-9"></i>
+            </button>
+          </div>
+          <div class="button">
+            <button id="button" class="operator" value="x">
+              <i id="button-icon" class="fa-solid fa-multiply"></i>
+            </button>
+          </div>
+          <div class="button">
+            <button id="button" value="4">
+              <i id="button-icon" class="fa-solid fa-4"></i>
+            </button>
+          </div>
+          <div class="button">
+            <button id="button" value="5">
+              <i id="button-icon" class="fa-solid fa-5"></i>
+            </button>
+          </div>
+          <div class="button">
+            <button id="button" value="6">
+              <i id="button-icon" class="fa-solid fa-6"></i>
+            </button>
+          </div>
+          <div class="button">
+            <button id="button" class="operator" value="+">
+              <i id="button-icon" class="fa-solid fa-plus"></i>
+            </button>
+          </div>
+          <div class="button">
+            <button id="button" value="3">
+              <i id="button-icon" class="fa-solid fa-3"></i>
+            </button>
+          </div>
+          <div class="button">
+            <button id="button" value="2">
+              <i id="button-icon" class="fa-solid fa-2"></i>
+            </button>
+          </div>
+          <div class="button">
+            <button id="button" value="1">
+              <i id="button-icon" class="fa-solid fa-1"></i>
+            </button>
+          </div>
+          <div class="button">
+            <button id="button" class="operator" value="-">
+              <i id="button-icon" class="fa-solid fa-minus"></i>
+            </button>
+          </div>
+          <div class="button">
+            <button id="button" value="(-)">
+              <i id="button-icon" class="fa-solid fa-plus-minus"></i>
+            </button>
+          </div>
+          <div class="button">
+            <button id="button" value="0">
+              <i id="button-icon" class="fa-solid fa-0"></i>
+            </button>
+          </div>
+          <div class="button">
+            <button id="button" value=".">.</button>
+          </div>
+          <div class="button">
+            <button id="button" class="equals" value="=">
+              <i id="button-icon" class="fa-solid fa-equals"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="calc">
+        <button id="advanced">Advanced</button>
+        <div id="advanced-inputs" class="inputs hidden">
+          <div class="button">
+            <button id="button" value="square-root">
+              <i id="button-icon" class="fa-solid fa-square-root-variable"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript" src="..\js\calc.js" defer></script>
+  </body>
+  <footer>
+    <p>&copy; 2024 Anon - All Rights Reserved</p>
+  </footer>
+</html>
