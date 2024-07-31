@@ -1,17 +1,17 @@
+HOW TO USE GIT
+
+1: use 'git add --all' to add all files to the repository
+2: use 'git commit -m "some_message" to commit changes to repository
+3: use 'git push' to push to github
+
+
+
 SETUP YOURSELF
 
 1: install git from https://git-scm.com/
 2: check if its installed, use 'git --version'
 3: use 'git config --global user.name "<your_username>"' (git config --global user.name "Porygon61")
 4: use 'git config --global user.email "<your_email>"' (git config --global user.email "Porygon6@web.de")
-
-
-
-HOW TO USE GIT
-
-1: use 'git add --all' to add all files to the repository
-2: use 'git commit -m "some_message" to commit changes to repository
-3: use 'git push' to push to github
 
 
 
