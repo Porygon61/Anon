@@ -2,8 +2,8 @@ SETUP YOURSELF
 
 1: install git from https://git-scm.com/
 2: check if its installed, use 'git --version'
-3: use 'git config --global user.name "<your_username>"'
-4: use 'git config --global user.email "<your_email>"'
+3: use 'git config --global user.name "<your_username>"' (git config --global user.name "Porygon61")
+4: use 'git config --global user.email "<your_email>"' (git config --global user.email "Porygon6@web.de")
 
 
 
