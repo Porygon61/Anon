@@ -17,7 +17,7 @@ HOW TO USE GIT
 
 HOW TO SETUP GIT with already existing repository
 
-1:git clone https://github.com/<your_username>/your_repository.git
+1:use 'git clone https://github.com/<your_username>/your_repository.git' (git clone https://github.com/Porygon61/Anon.git)
 2: HOW TO USE GIT
 
 
