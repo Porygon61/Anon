@@ -27,4 +27,4 @@ HOW TO SETUP GIT locally
 0:go to folder of choice (cd) or create a new folder (mkdir)
 1: use 'git init'
 2: HOW TO USE GIT
-3:git remote add origin https://github.com/<your_username>/your_repository.git
+3:use 'git remote add origin https://github.com/<your_username>/your_repository.git' (git remote add origin https://github.com/Porygon61/Anon.git)
