@@ -3,27 +3,67 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="author" content="Anon" />
+		<meta name="copyright" content="Anon" />
+		<meta
+			name="description"
+			content="Read Novels, Manhwa, Manhua and Manga for Free - Anon"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+			integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
 		<title>Anon | Home</title>
 	</head>
 	<style>
 		#header-wrapper {
 			background-color: #2f2f3b;
 			padding: 20px;
-			display: flex;
+		}
+
+		#header {
+			margin: 0 auto;
+			width: 950px;
+			font-family: helvetica;
+			color: #ececec;
+		}
+
+		#header .top {
+			background-color: #1b1b22;
+		}
+
+		.left {
+			float: left;
+		}
+
+		.right {
+			float: right;
 		}
 	</style>
-	<body id="body" style="background-color: #474d5d">
+	<body id="body" style="background-color: #474d5d; min-width: 965px">
 		<div id="header-wrapper">
 			<div id="header">
-				<div id="logo">
-					<h1>Anon</h1>
-				</div>
-				<div id="login-panel">
-					<div class="user-login">
-						<a href=""><i class="fa-regular fa-circle-user"></i></a>
-						<a href="home\accounts\register\">Sign Up</a>
-						<span>|</span>
-						<a href="home\accounts\login\">Sign In</a>
+				<div class="top">
+					<div id="logo" class="left"><span>Anon</span></div>
+					<div class="navs left">
+						<div id="home">
+						<a href="main.html">Home</a>
+					</div>
+					<div id="types">
+						<div>
+						<a href="./home/types/">Types</a>
+					</div>
+					<div>
+						<a href="./home/types/all/">All</a>
+						<a href="./home/types/novel/">Novel</a>
+						<a href="./home/types/manhwa/">Manhwa"</a>
+						<a href="./home/types/manhua/">Manhua</a>
+						<a href="./home/types/manga/">Manga</a>
+					</div>
+					</div>
 					</div>
 				</div>
 			</div>
@@ -33,6 +73,6 @@
 	<script>
 		//document.getElementById('body').innerHTML = `
 
-    //`;
+		//`;
 	</script>
 </html>

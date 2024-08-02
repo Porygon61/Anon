@@ -1,0 +1,96 @@
+Header
+    Top
+    	left
+            logo
+    	centered-left
+            home
+            types(extends)
+            	all
+            	novel
+            	manhwa
+            	manhua
+            	manga
+        	blog(user-driven)
+        	donate
+        right
+        	Updates(of followed content)
+        	history
+            profile(extends) / sign in , sign up
+            	home(link-to-page)
+            		followed content(list)
+            		<lists(want to read, reading, already read, …)>
+            	Activity (associated with profile)
+            		Mailbox
+            		…
+            	Bookmarks
+            	Settings
+                Logout
+
+    Bottom
+        left
+            <type>(extends)
+            	Trending
+            	New
+            	Latest updated
+            Genres(extends)
+            	<all_genres>
+            Nsfw(extends)
+            	Only
+            	None
+            Tags
+        right
+            Search(includes) (-> sort by: relevance, latest, a-z, rating, trending, most views, new)
+                Input
+                Advanced(extends-checkboxes, default:all)
+                	nsfw
+                	Tags
+                	<types>
+                	…
+
+
+
+
+List display
+    Header
+    	Search(big)
+    	Filters
+    	List
+    		<object>
+    			Cover
+    			Title
+    			Alternative title
+    			Genres
+    			Status
+    			Authors/artists
+    			Status
+    			Summary(extends)
+    			release
+    			Latest chapters
+    		<object>
+            …
+
+
+
+content-object(page)
+	cover
+	title
+	create date/release
+	last update
+	num of chapters
+	<chapters> with date
+	Rating
+	Other title/alternative
+	Genres
+	Status(of manga)
+    Author
+    (artist)
+    Summary
+    Type(novel…)
+    Nsfw/sfw
+    Tags
+    Followed
+    List(user)
+    Status(of progress-reading..)
+    Possible bookmark(s)
+    comments
+
