@@ -18,7 +18,8 @@ body {
     height: 185px;
     width: 100%;
     margin: 0 auto;
-    display: block;
+    background-color: #2f2f3b;
+    background: url(./images/home/mangago-spring.jpg) no-repeat center top;
 }
 
 #header {
@@ -56,7 +57,12 @@ body {
 }
 
 #menu #home a {
-    background: url(/images/home/home-logo.png);
+    background: url(./images/home/home-logo.png) no-repeat scroll 10px 10px transparent;
+}
+
+#menu .nav a {
+    text-decoration: none;
+    text-align: center;
 }
 
 #menu #new-content {
@@ -72,7 +78,7 @@ body {
     float: left;
     height: 39px;
     width: 153px;
-    background: #393B3A;
+    background-color: #393B3A;
     margin-left: 4px;
     line-height: 39px;
     font-weight: bold;
