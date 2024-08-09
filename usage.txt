@@ -28,3 +28,13 @@ HOW TO SETUP GIT locally
 1: use 'git init'
 2: HOW TO USE GIT
 3:use 'git remote add origin https://github.com/<your_username>/your_repository.git' (git remote add origin https://github.com/Porygon61/Anon.git)
+
+
+
+
+to add a .bat file to the task bar just add 'cmd.exe /C' before the file path to the .bat file
+
+typical .bat script to execute python script and then close the command prompt window
+    python -u "e:\Privat\All Code\Programs\open_yt.py"
+    exit
+

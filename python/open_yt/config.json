@@ -1,0 +1,26 @@
+{
+    "topics": [
+        "Saftiger Hugo",
+        "Rally Phonk",
+        "None of the above"
+    ],
+    "browsers": [
+        "mozilla",
+        "firefox",
+        "epiphany",
+        "kfmclient",
+        "konqueror",
+        "kfm",
+        "opera",
+        "opera-gx",
+        "links",
+        "elinks",
+        "lynx",
+        "w3m",
+        "windows-default",
+        "chrome",
+        "chromium",
+        "chromium-browser",
+        "none of the above"
+    ]
+}
